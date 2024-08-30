@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lead Gen E-Commerce Website Using BS-5</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        span {
+            font-size: 16px;
+            padding: 0px 10px;
+        }
+
+        .fa-solid {
+            padding: 10px 10px;
+        }
+
+        ul li a:before {
+           color: red;
+        }
+        ul li a:hover {
+            border-bottom: 2px solid black;
+            transition: 1.5s;
+            /* transform: scale(1.10); */
+            background-color: #282828;
+            border-radius: 8px;
+         }
+         #nav{
+            float: right;
+         }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <!-- Header & Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-light navbar-light">
+
+        <div class="container mt-3">
+
+            <a href="#" class="navbar-brand">
+                <img src="logo (1).png" class="img-fluid" width="150px" height="50px" style="margin-right: 150px;" />
+            </a>
+
+            <!-- burger btn here -->
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav" style="margin-left:200px;letter-spacing: 2px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">ABOUT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-process"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">OUR-PROCESS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">SERVICES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#people"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">PEOPLE</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">TESTIMONIALS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"
+                            style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 15px 18px;">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="col-lg-6">
+                <nav class="navbar navbar-expand-sm fixed-top float-end" style="padding: 30px 0px;margin-left: 750px;">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"
+                                style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 0px 20px;">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-process"
+                                style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 0px 20px;">OUR PROCESS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services"
+                                style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 0px 20px;">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#people"
+                                style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 0px 20px;">PEOPLE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials"
+                                style="font-size: 14px; color: #A1A1A1; font-weight:600;padding: 0px 20px;">TESTIMONIALS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> -->
+    </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="container" id="about" style="background-color: white;
+    padding:50px 10px;
+    border: #DCDCDC solid 3px;
+    margin-top:30px;
+    box-shadow: 10px 10px 10px 5px #888888;
+    ;">
+
+        <div class="row">
+            <div class="col-lg-6" style="margin-top: 100px;">
+                <h2 class="display-2" style="font-weight: bolder;color:#374A8A;">PLANNING FOR THE FUTURE</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorum obcaecati,
+                    error dolorem deserunt quibusdam, nisi minus magnam explicabo Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Praesentium accusantium doloribus iusto eaque provident, expedita aliquam eius
+                    molestias distinctio officiis ducimus, eum est. Natus nemo quae eveniet molestiae obcaecati nobis.
+                </p>
+            </div>
+
+            <!-- Carousel -->
+            <div class="col-lg-6" style="margin-top: 100px;">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="agency-slider-01.jpg" class="img-fluid float-end w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="agency-slider-02.jpg" class="img-fluid float-end w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="agency-slider-03.jpg" class="img-fluid float-end w-100">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls/icons -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- --------------------------------------------------------------------------------------------- -->
+
+    <div class="container mt-4">
+        <div class="row" style="margin-top:80px;">
+
+            <div class="col-md-4">
+                <i class="fa-sharp fa-solid fa-signal  fa-2xl" style="color: #63E6BE;"></i>
+                <span>Business Planning</span>
+                <h3 class="mt-2">Strategy and Execution</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been he
+                    industry's standard dummy text ever since.</p>
+            </div>
+
+            <div class="col-md-4">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-dots  fa-2xl" style="color: #63E6BE;"></i>
+                <span>Extremely Analysis</span>
+                <h3 class="mt-2">Financial Projections</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been he
+                    industry's standard dummy text ever since.</p>
+            </div>
+
+            <div class="col-md-4">
+                <i class="fa-sharp fa-solid fa-globe  fa-2xl" style="color: #63E6BE;"></i>
+                <span>Excellent Opportunities</span>
+                <h3 class="mt-2">International Business</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been he
+                    industry's standard dummy text ever since.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row" style="margin-top:80px;">
+            <div class="col-md-6" style="margin-top: 30px;">
+
+                <button
+                    style="background-color: #63E6BE; border-color: transparent; color: white; font-size: 13px; padding:6px 7px ;font-weight:bolder;">GET
+                    START NOW</button>
+
+                <h1 class="text-muted">The world's most powerful website build now.</h1>
+                <p class="text-dark">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has
+                    survived not only five centuries, but also the leap into electronic typesetting, remaining
+                    essentially unchanged.</p>
+
+                <p class="text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the when an
+                    unknown printer took a galley of type scrambled it to make a type specimen book.</p>
+                <button class="btn btn-secondary"
+                    style="border-radius: 20px; border-color: transparent;margin-top: 20px;">READ MORE</button>
+            </div>
+            <div class="col-md-6" style="margin-top: 30px;">
+                <img src="content-14.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------------------------------  -->
+
+    <!-- Our Process -->
+
+    <div class="container mt-4" id="our-process" style="padding-top:150px;margin-top:30px;">
+        <!-- id="home" style="padding-top:130px;margin-top:30px;" -->
+
+
+        <div class="row">
+            <div class="col-lg-12" style="height:auto;
+            width: 100%;
+            padding: 50px 30px;
+            background-color:#374A8A;">
+                <h1 style="color: #ffffff !important;
+                font-size:22px;
+                line-height:20px;
+                font-weight: 500px;
+                letter-spacing: 2px;">
+                    <center>Looking for a first-class business plan consultant?</center>
+                </h1>
+                <center>
+                    <button class="btn" style="background-color: transparent;
+                border: white 3px solid;
+                color: white;
+                margin-top: 20px;
+                border-radius: 15px;
+                font-weight: 500;">
+                    REGISTER TODAY
+                    <i class="fa-solid fa-arrow-right fa-lg"></i>
+                </button>   
+                </center>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 80px;">
+            <div class="col-md-3">
+                <h1 class="text-muted" style="font-size: 60px;">.01</h1>
+                <h3 class="mt-2" style="font-size: 18px;">Technological innovation</h3>
+                <p style="font-size: 14px;">Lorem Ipsum is simply dummy text printing.</p>
+                <p class="mt-3 text-muted" style="font-size: 14px;">Lorem Ipsum is simply dummy text of the printing &
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h1 class="text-muted" style="font-size: 60px;">.02</h1>
+                <h3 class="mt-2" style="font-size: 18px;">Creativity designs</h3>
+                <p style="font-size: 14px;">Lorem Ipsum is simply dummy text printing.</p>
+                <p class="mt-3 text-muted" style="font-size: 14px;">Lorem Ipsum is simply dummy text of the printing &
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h1 class="text-muted" style="font-size: 60px;">.03</h1>
+                <h3 class="mt-2" style="font-size: 18px;">Customer support</h3>
+                <p style="font-size: 14px;">Lorem Ipsum is simply dummy text printing.</p>
+                <p class="mt-3 text-muted" style="font-size: 14px;">Lorem Ipsum is simply dummy text of the printing &
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h1 class="text-muted" style="font-size: 60px;">.04</h1>
+                <h3 class="mt-2" style="font-size: 18px;">Project management</h3>
+                <p style="font-size: 14px;">Lorem Ipsum is simply dummy text printing.</p>
+                <p class="mt-3 text-muted" style="font-size: 14px;">Lorem Ipsum is simply dummy text of the printing &
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------- -->
+
+    <!-- Our services -->
+
+    <div class="container" id="service" style="margin-top:2px;padding: 180px 0px;">
+
+        <div class="row">
+            <h1 style="font-size: 35px;font-weight: 700%;color: #282828;line-height: 35px;">
+                <center>OUR SERVICES</center>
+            </h1>
+
+            <p style="font-size: 14px;line-height: 24px;color:#7C7C7C;">
+                <center>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    <br> the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type <br> and scrambled it to make a type specimen book.
+                </center>
+            </p>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-regular fa-user fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">ONLINE EARNING</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-solid fa-rectangle-ad fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">ADVERTISEMENT</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-regular fa-pen-to-square fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">UNIQUE SHORTCODE</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top:20px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-solid fa-chart-column fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">MARKET PLACE</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top: 15px;">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-regular fa-comments fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">SUPPORT</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top: 15px">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fa-sharp fa-solid fa-code fa-2xl" style="color: #63E6BE;margin-right:20px;"></i>
+                <h3 style="font-size: 14px; line-height: 30px;margin-top: 10px;display: inline;">DESIGN</h3>
+                <p class="text-muted" style="font-size: 14px;margin-top: 15px">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been he industry's standard dummy text ever
+                    since.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------------->
+
+    <!-- Card here -->
+    <!-- Meet Our People -->
+
+    <div class="container" id="people" style="padding:80px 0px;margin-top:-80px;">
+        <div class="text">
+            <h2 class="display-4" style="font-weight: 500;text-align: center;font-size: 36px;margin-bottom: 30px;">MEET
+                OUR PEOPLE</h2>
+            <p class="meet-text" style="text-align: center;font-size: 14px;margin-bottom: 35px;">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="team-01.jpg" class="img-fluid w-100" alt="">
+
+                    <div class="card-body">
+                        <div class="card-tittle">
+
+                            <p class="card-text text-muted mt-3" style="font-size: 14px;text-align: center;"> SARA SMITH
+                            </p>
+
+                            <p class="card-text text-muted " style="font-size: 14px;text-align: center;"> FOUNDER AND
+                                CEO</p>
+
+                            <div id="border" style="border-bottom: solid 3px #DCDCDC;"></div>
+                            <div class="icons" style="display: flex;justify-content: space-around; margin-top:20px">
+                                <i class="fa-brands fa-facebook  fa-md" style="color: #282828;cursor: pointer;"></i>
+                                <i class="fa-brands fa-twitter  fa-md" style="color: #282828;cursor: pointer;"></i>
+                                <i class="fa-brands fa-linkedin  fa-md" style="color: #282828;cursor: pointer;"></i>
+                                <i class="fa-brands fa-pinterest  fa-md" style="color: #282828;cursor: pointer;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="team-02.jpg" class="img-fluid w-100" alt="">
+
+                    <div class="card-body">
+                        <div class="card-tittle">
+
+                            <p class="card-text text-muted mt-3" style="font-size: 14px;text-align: center;"> SOMMER
+                                CHRISTIAN
+                            </p>
+
+                            <p class="card-text text-muted " style="font-size: 14px;text-align: center;"> CREATIVE
+                                DIRECTOR
+                            </p>
+
+                            <div id="border" style="border-bottom: solid 3px #DCDCDC;"></div>
+                            <div class="icons" style="display: flex;justify-content: space-around; margin-top:20px">
+                                <i class="fa-brands fa-facebook  fa-md" style="color: #282828;cursor: pointer"></i>
+                                <i class="fa-brands fa-twitter  fa-md" style="color: #282828;cursor: pointer"></i>
+                                <i class="fa-brands fa-linkedin  fa-md" style="color: #282828;cursor: pointer"></i>
+                                <i class="fa-brands fa-pinterest  fa-md" style="color: #282828;cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="team-03.jpg" class="img-fluid w-100" alt="">
+
+                    <div class="card-body">
+                        <div class="card-tittle">
+
+                            <p class="card-text text-muted mt-3" style="font-size: 14px;text-align: center;"> ANDREW
+                                LUPKIN
+                            </p>
+
+                            <p class="card-text text-muted " style="font-size: 14px;text-align: center;"> DEVELOPER HEAD
+                            </p>
+
+                            <div id="border" style="border-bottom: solid 3px #DCDCDC;"></div>
+                            <div class="icons" style="display: flex;justify-content: space-around; margin-top:20px">
+                                <i class="fa-brands fa-facebook  fa-md" style="color: #282828;cursor: pointer;"></i>
+                                <i class="fa-brands fa-twitter  fa-md" style="color: #282828;cursor: pointer"></i>
+                                <i class="fa-brands fa-linkedin  fa-md" style="color: #282828;cursor: pointer"></i>
+                                <i class="fa-brands fa-pinterest  fa-md" style="color: #282828;cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------------------------------------- -->
+
+    <!-- footer-hero-image -->
+
+    <div class="container" style="margin-top:100px;background-color:#374A8A;">
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="hero-bg24.jpg" class="img-fluid width:100%" alt="">
+            </div>
+
+            <div class="col-lg-6 mt-4">
+                <h1 class="text" style="font-weight:800;color: white;">We're small but impressive.</h1>
+                <h1 style="color: white">Experience the power of LeadGen.</h1>
+
+                <p class="text" style="margin-top: 80px;color: white">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    standard dummy text.
+
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+
+                <button class="btn btn-white"
+                    style="margin-top:50px;color: #374A8A;background-color: aliceblue;border-radius:20px;font-weight:bold;">Read
+                    More!</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- _______________________________________________________________________________________________ -->
+
+
+    <!-- Testimonials here -->
+
+    
+    <div class="container" style="margin-top:5px;padding: 180px 0px;" id="testimonials">
+        <h1 class="display-2" style="font-weight: 500;text-align: center;font-size:50px;margin-bottom: 100px;">
+            Testi<strong style="color: #374A8A;">monials</strong></h1>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="avtar-10.jpg" class="img-fluid d-block mx-auto" style="border-radius: 50%;" alt="">
+                <p class="text mt-4 text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione nam quas aut alias nihil
+                    laudantium eligendi nemo magni inventore autem minima, soluta itaque a nulla dolores? Beatae,
+                    voluptatibus quisquam.
+                </p>
+                <center>
+                    <h6>MELISSA SMITH - GOOGLE</h6>
+                </center>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="avtar-11.jpg" class="img-fluid d-block mx-auto" style="border-radius: 50%;" alt="">
+                <p class="text mt-4 text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione nam quas aut alias nihil
+                    laudantium eligendi nemo magni inventore autem minima, soluta itaque a nulla dolores? Beatae,
+                    voluptatibus quisquam.
+                </p>
+                <center>
+                    <h6>JERMY GIARD - MICROSOFT</h6>
+                </center>
+            </div>
+
+            <div class="col-lg-4">
+                <img src="avtar-12.jpg" class="img-fluid d-block mx-auto" style="border-radius: 50%;" alt="">
+                <p class="text mt-4 text-muted">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ratione nam quas aut alias nihil
+                    laudantium eligendi nemo magni inventore autem minima, soluta itaque a nulla dolores? Beatae,
+                    voluptatibus quisquam.
+                </p>
+                <center>
+                    <h6>PAUL HEYMAN - FACEBOOK</h6>
+                </center>
+            </div>
+
+        </div>
+    </div>
+
+    <!--___________________________________________________________________________________________ -->
+    <!-- Contact Form -->
+
+   
+
+    <div class="container" id="contact" style="padding-top: 100px;margin-top: -120px;">
+
+        <div class="row">
+
+            <h1 class="display-2" style="font-weight: 500;text-align: center;font-size:50px;margin-bottom: 50px;">
+                Contact <strong style="color: #374A8A;">Us</strong></h1>
+           
+           <div class="col-lg-6" 
+             style="border: 3px solid gainsboro;
+              border-radius: 6px;padding: 100px 30px;
+              box-shadow: 0 0 3px rgba(0, 0, 0, .2) !important;">
+
+                <h3 class="mb-5" style="font-size: 24px;
+                line-height: 30px;
+                font-weight: 500;">
+                    <center>Ready to Get Started?</center>
+                </h3>
+
+                <form>
+                    <div class="input-group mt-4">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-user fa-lg"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div> <br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-lock fa-lg"></i>
+                        </span>
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div> <br>
+
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="fa-solid fa-message fa-lg"></i>
+                        </span>
+                        <textarea name="message" class="form-control" rows="4" id="messgae"
+                            placeholder="Message..................."></textarea>
+                    </div> <br>
+
+                    <button class="btn btn-primary"
+                        style="background-color: #63E6BE;text-transform: uppercase;font-size:14px;font-weight:600;padding: 8px 20px;border-color: transparent;cursor: pointer;border-radius: 20px;color: white;">Send
+                        Messgae</button>
+            </div>
+
+            <div class="col-lg-6 mt-5">
+
+                <h4 style="color: #282828!important;font-size: 28px;line-height: 80px;margin-left: 30px;">Looking For a
+                    Excellent Business Idea?</h4>
+
+                <p class="text-muted" style="font-size:14px;line-height:40px;margin-left: 30px;">Lorem Ipsum is simply
+                    dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.
+                </p>
+
+                <button class="btn mb-5 mt-3"
+                    style="background-color:transparent;color:#63E6BE;border: #63E6BE solid 2px;border-radius: 15px;margin-left: 30px;font-size: 14px;">GET
+                    DIRECTIONS
+                    <i class="fa-solid fa-arrow-right fa-lg"></i></button>
+
+                <hr style="border: 2px solid grey;">
+
+                <div class="form-text" style="margin-top:50px;margin-left: 30px;line-height:20px;">
+
+                    <h4 style="font-size: 18px;line-height: 25px;font-weight: 500;">
+                        Our Headquarters</h4>
+
+                    <h6 class="text-muted" style="font-size: 14px;line-height: 24px;">301 The Greenhouse, Custard,<br>
+                        Factory, London, E2 8DY.</h6>
+
+                    <h6 class="text-muted" style="font-size: 14px;line-height: 24px;">+44 (0) 123 456 7890</h6>
+
+                    <a href="#"
+                        style="font-size: 14px;line-height: 24px;text-decoration: none  ;">no-reply@domain.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--_______________________________________________________________________________________________ -->
+    <!-- fooooooooooter -->
+    <div class="border" style="border: 4px solid grey;margin-top:80px;"></div>
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <img src="logo (1).png" alt="logo" style="cursor: pointer;">
+                <p class="text-muted" style="margin-top: 40px;">
+                    We've been crafting beautiful websites, launching stunning brands and making clients happy for
+                    years. With our prestigious craftsmanship.
+                </p>
+            </div>
+
+            <div class="col-md-2">
+                <div class="company">
+                    <h6 style="margin-bottom:30px;">Company</h6>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">About Us</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Testimonials</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">FAQ's</p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="useful-links">
+                    <h6 style="margin-bottom:30px;">Useful Links</h6>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Our Process</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">People</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Client</p>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="follow-us">
+                    <h6 style="margin-bottom:30px;">Follow Us</h6>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Facebook</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Twitter</p>
+                    <p clas="text-muted" style="line-height: 15px;font-size: 13px;cursor: pointer;">Google Plus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--_______________________________________________________________________________________________ -->
+
+    <div class="border" style="border: 4px solid grey;margin-top:80px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p class="text-muted" style="font-size: 14px;margin-top: 20px;">© 2016 LeadGen is Proudly Powered By
+                    ThemeZaa.</p>
+            </div>
+
+            <div class="col-lg-6"
+                style="display: flex;flex-direction: row;justify-content:space-around;margin-top:20px;">
+                <i class="fa-brands fa-facebook fa-lg" style="color: #3B5998;cursor: pointer;"></i>
+
+                <i class="fa-brands fa-twitter fa-lg" style="color: #00ACED;cursor: pointer;"></i>
+
+                <i class="fa-brands fa-pinterest fa-lg" style="color: #DD4B39;cursor: pointer;"></i>
+
+                <i class="fa-brands fa-google-plus-g fa-lg" style="color: #CB2027;cursor: pointer;"></i>
+
+                <i class="fa-brands fa-linkedin fa-lg" style="color: #007BB6;cursor: pointer;"></i>
+
+                <i class="fa-brands fa-youtube fa-lg" style="color:#BB0000;cursor: pointer;"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
